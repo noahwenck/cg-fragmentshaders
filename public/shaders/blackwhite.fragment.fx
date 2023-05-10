@@ -15,8 +15,8 @@ void main() {
     FragColor = texture(image, model_uv);
 
     float lum = 0.299 * FragColor.r + 0.587 * FragColor.g + 0.114 * FragColor.b;
-    FragColor.x = lum;
-    FragColor.y = lum;
-    FragColor.z = lum;
+    FragColor.r = lum;
+    FragColor.g = lum;
+    FragColor.b = lum;
 
 }
