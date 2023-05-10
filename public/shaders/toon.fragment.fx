@@ -13,4 +13,9 @@ out vec4 FragColor;
 void main() {
     // Color
     FragColor = texture(image, model_uv);
+    
+    FragColor *= 4.0;
+    FragColor = round(FragColor);
+    FragColor /= 4.0;
+
 }
