@@ -19,7 +19,7 @@ void main() {
     coords -= 1.0;
     float theta = atan(coords.y, coords.x);
     float radius = pow(length(coords), 1.5);
-    vec2 fish = vec2(radius * cos(theta), radius * sin(theta)); // something wrong here
+    vec2 fish = vec2(radius * cos(theta), radius * sin(theta));
     fish += 1.0;
     fish *= 0.5;
     FragColor = texture(image, fish);

@@ -21,7 +21,6 @@ void main() {
     float radius = length(coords);
     vec2 offset = coords * (sin(radius * 30.0 - time * 5.0) + 0.5) / 60.0;
     vec2 newCoords = model_uv + offset;
-    //coords /= 2.0;
     FragColor = texture(image, newCoords);
 
 }
